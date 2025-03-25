@@ -39,7 +39,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for=" mail">Email :</label><br>
+                        <label for="mail">Email :</label><br>
                         <input type="email" id="mail" name="mail" size="65">
                     </td>
                 </tr>
@@ -62,13 +62,37 @@
                 <tr>
                     <td>
                         <label for="metier">Métier exercé :</label><br>
-                        <input type="text" id="metier" name="metier" size="65">
+                        <select id="metier" name="metier">
+                            <option value="10">Agricult.eur.rice exploitant.e</option>                            
+                            <option value="21">Artisan.e</option>
+                            <option value="22">Commercant.e et assimilés</option>
+                            <option value="23">Chef.fe d'entreprise de 10 salariés ou plus</option>
+                            <option value="31">Professions libérales</option>
+                            <option value="33">Cadres de la fonction publique</option>
+                            <option value="34">Professeur.s.es, professions scientifiques</option>
+                            <option value="35">Professions de l'informations, des arts et des spectacles</option>
+                            <option value="37">Cadres administratifs et commerciaux d'entreprises</option>
+                            <option value="38">Ingénieur.s.es et cadres techniques d'entreprise</option>
+                            <option value="42">Professeur.s.es des écoles, institu.teur.trice et assimilés</option>
+                            <option value="43">Professions intermédiaires de la santé et du travail social</option>
+                            <option value="44">Clergé, religieu.x.se</option>
+                            <option value="45">Professions intermédiaires administratives de la fonction publique</option>
+                            <option value="46">Professions intermédiaires administratives commerciales en entreprise</option>
+                            <option value="47">Technicien.ne</option>
+                            <option value="48">Contremaitre, Agent.e de maitrise</option>
+                            <option value="52">Employé.e</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="nation">Nationalité :</label><br>
-                        <input type="text" id="nation" name="nation">
+                        <select id="nation" name="nation" autocomplete="france">
+                            <option value="france">France</option>
+                            <option value="european-union">Union Européenne</option>
+                            <option value="asia">Asia</option>
+                            <option value="other">Autre</option>
+                        </select>
                     </td>
                     <td>
                         <label for="dob">Date de naissance :</label><br>
