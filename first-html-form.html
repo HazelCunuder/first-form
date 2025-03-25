@@ -15,21 +15,21 @@
                 <tr>
                     <td>
                         <label for="prenom">Prénom :</label><br>
-                        <input type="text" id="prenom" name="prenom" size="30">
+                        <input type="text" id="prenom" name="prenom" size="30" required>
                     </td>
                     <td>
                         <label for="nom">Nom :</label><br>
-                        <input type="text" id="nom" name="nom" size="30">
+                        <input type="text" id="nom" name="nom" size="30" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="age">Age :</label><br>
-                        <input type="number" id="age" name="age" min="0" max="150">
+                        <input type="number" id="age" name="age" min="0" max="150" required>
                     </td>    
                     <td>
                         <label for="gender">Genre :</label><br>
-                        <select id="gender" name="gender">
+                        <select id="gender" name="gender" required>
                             <option value="homme">Homme</option>
                             <option value="femme">Femme</option>
                             <option value="non-binaire">Non-Binaire</option>
@@ -38,31 +38,29 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td>
                         <label for="mail">Email :</label><br>
-                        <input type="email" id="mail" name="mail" size="65">
+                        <input type="email" id="mail" name="mail" size="65" placeholder="jeanmartin@host.com" required>
                     </td>
-                </tr>
-                <tr>
                     <td>
                         <label for="adress">Adresse :</label><br>
-                        <input type="text" id="adress" name="adress" size="65">
+                        <input type="text" id="adress" name="adress" size="65" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="cp">Code Postal :</label>
-                        <input type="text" id="cp" name="code-postal" size="7" maxlength="5">
+                        <label for="cp">Code Postal :</label><br>
+                        <input type="number" id="cp" name="code-postal" max="99999" pattern="[0-9]{5}" required>
                     </td>
                     <td>
-                        <label for="town">Ville :</label>
-                        <input type="text" id="town" name="town" size="37">
+                        <label for="town">Ville :</label><br>
+                        <input type="text" id="town" name="town" size="37" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="metier">Métier exercé :</label><br>
-                        <select id="metier" name="metier">
+                        <select id="metier" name="metier" required>
                             <option value="10">Agricult.eur.rice exploitant.e</option>                            
                             <option value="21">Artisan.e</option>
                             <option value="22">Commercant.e et assimilés</option>
@@ -83,44 +81,44 @@
                             <option value="52">Employé.e</option>
                         </select>
                     </td>
-                </tr>
-                <tr>
                     <td>
                         <label for="nation">Nationalité :</label><br>
-                        <select id="nation" name="nation" autocomplete="france">
+                        <select id="nation" name="nation" autocomplete="france" required>
                             <option value="france">France</option>
                             <option value="european-union">Union Européenne</option>
                             <option value="asia">Asia</option>
                             <option value="other">Autre</option>
                         </select>
                     </td>
+                </tr>
+                <tr>
                     <td>
                         <label for="dob">Date de naissance :</label><br>
-                        <input type="date" id="dob" name="dob">
+                        <input type="date" id="dob" name="dob" max="2025-03-25" required>
                     </td>
                     <td>
                         <label for="cob">Pays de naissance :</label><br>
-                        <input type="text" id="cob" name="cob" size="21">
+                        <input type="text" id="cob" name="cob" size="21" required>
                     </td> 
                 </tr>
                 <tr>
                     <td>
                         <label for="ssn">Numéro de Sécurité Sociale :</label><br>
-                        <input type="text" id="ssn" name="ssn" size="30" maxlength="15">
+                        <input type="text" id="ssn" name="ssn" size="30" maxlength="21" placeholder="X XX XX XX XXX XXX XX" pattern="[1-2]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{3} [0-9]{3} [0-9]{2}" required>
                     </td>
                     <td>
                         <label for="pnb">Numéro de Passeport :</label><br>
-                        <input type="text" id="pnb" name="pnb" size="29">
+                        <input type="text" id="pnb" name="pnb" size="29" placeholder="XXXXXXXXX" maxlength="9" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="ddp">Date de déliverance du Passeport :</label><br>
-                        <input type="date" id="ddp" name="ddp">
+                        <input type="date" id="ddp" name="ddp" max="2025-03-25" required>
                     </td>
                     <td>
                         <label for="dvp">Date de validité du Passeport</label><br>
-                        <input type="date" id="dvp" name="dvp">
+                        <input type="date" id="dvp" name="dvp" min="2025-03-25" required>
                     </td>
                 </tr>
             </table> <br>
