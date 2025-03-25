@@ -11,7 +11,8 @@
         
         <form>
             <table>
-                <tr>
+                <tr> 
+                <!--This row is for inserting your first name and family name-->
                     <td>
                         <label for="prenom">Prénom :</label><br>
                         <input type="text" id="prenom" name="prenom" size="30" required>
@@ -22,6 +23,7 @@
                     </td>
                 </tr>
                 <tr>
+                <!--This row allows user to select their age, as well as choose their gender on a dropdown menu-->
                     <td>
                         <label for="age">Age :</label><br>
                         <input type="number" id="age" name="age" min="0" max="150" required>
@@ -38,19 +40,21 @@
                     </td>
                 </tr>
                 <tr>
+                <!--In this row, users can input their emails, as well as their address-->
                     <td>
                         <label for="mail">Email :</label><br>
                         <input type="email" id="mail" name="mail" size="65" placeholder="jeanmartin@host.com" required>
                     </td>
                     <td>
-                        <label for="adress">Adresse :</label><br>
-                        <input type="text" id="adress" name="adress" size="65" required>
+                        <label for="address">Adresse :</label><br>
+                        <input type="text" id="address" name="address" size="65" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                    <!--This is for inputting your postal code, it has to be 5 numbers max, and only numbers-->
                         <label for="cp">Code Postal :</label><br>
-                        <input type="text" id="cp" name="code-postal" title="Veuillez entrer un numéro de département correct" maxlength="5" pattern="[0-9]{5}" required>
+                        <input type="text" id="cp" name="code-postal" title="00000" maxlength="5" pattern="[0-9]{5}" required>
                     </td>
                     <td>
                         <label for="town">Ville :</label><br>
@@ -59,6 +63,7 @@
                 </tr>
                 <tr>
                     <td>
+                    <!--This allows users to select their job type on a dropdown list-->
                         <label for="metier">Métier exercé :</label><br>
                         <select id="metier" name="metier" required>
                             <option value="" disabled selected>Choisissez une option</option>
@@ -83,6 +88,7 @@
                         </select>
                     </td>
                     <td>
+                    <!--Like the previous list, however, france is set as the default selected value-->
                         <label for="nation">Nationalité :</label><br>
                         <select id="nation" name="nation" required>
                             <option value="" disabled>Choisissez une option</option>
@@ -95,6 +101,7 @@
                 </tr>
                 <tr>
                     <td>
+                    <!--Allows users to choose their date of birth, with the max being set at the current day of writing-->
                         <label for="dob">Date de naissance :</label><br>
                         <input type="date" id="dob" name="dob" max="2025-03-25" required>
                     </td>
@@ -105,10 +112,12 @@
                 </tr>
                 <tr>
                     <td>
+                    <!--This field is limited to 21 characters and has to follow the proper formatting of the Social Security number-->
                         <label for="ssn">Numéro de Sécurité Sociale :</label><br>
                         <input type="text" id="ssn" name="ssn" size="30" maxlength="21" placeholder="X XX XX XX XXX XXX XX" pattern="[1-2]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{3} [0-9]{3} [0-9]{2}" required>
                     </td>
                     <td>
+                    <!--Pretty much the same thing as the field above, but for the passport-->
                         <label for="pnb">Numéro de Passeport :</label><br>
                         <input type="text" id="pnb" name="pnb" size="29" placeholder="XXXXXXXXX" maxlength="9" required>
                     </td>
@@ -124,6 +133,7 @@
                     </td>
                 </tr>
             </table> <br>
+            <!--This sends the user towards the submitted page once they are done-->
             <input type="submit" value='Submit' formaction="form-submitted.html" formtarget="_self">
         </form>
     </body>             
