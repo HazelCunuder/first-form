@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
     <head>
@@ -30,6 +29,7 @@
                     <td>
                         <label for="gender">Genre :</label><br>
                         <select id="gender" name="gender" required>
+                            <option value="" disabled>Choisissez une option</option>
                             <option value="homme">Homme</option>
                             <option value="femme">Femme</option>
                             <option value="non-binaire">Non-Binaire</option>
@@ -50,7 +50,7 @@
                 <tr>
                     <td>
                         <label for="cp">Code Postal :</label><br>
-                        <input type="number" id="cp" name="code-postal" max="99999" pattern="[0-9]{5}" required>
+                        <input type="text" id="cp" name="code-postal" title="Veuillez entrer un numéro de département correct" maxlength="5" pattern="[0-9]{5}" required>
                     </td>
                     <td>
                         <label for="town">Ville :</label><br>
@@ -61,6 +61,7 @@
                     <td>
                         <label for="metier">Métier exercé :</label><br>
                         <select id="metier" name="metier" required>
+                            <option value="" disabled selected>Choisissez une option</option>
                             <option value="10">Agricult.eur.rice exploitant.e</option>                            
                             <option value="21">Artisan.e</option>
                             <option value="22">Commercant.e et assimilés</option>
@@ -83,8 +84,9 @@
                     </td>
                     <td>
                         <label for="nation">Nationalité :</label><br>
-                        <select id="nation" name="nation" autocomplete="france" required>
-                            <option value="france">France</option>
+                        <select id="nation" name="nation" required>
+                            <option value="" disabled>Choisissez une option</option>
+                            <option value="france" selected>France</option>
                             <option value="european-union">Union Européenne</option>
                             <option value="asia">Asia</option>
                             <option value="other">Autre</option>
@@ -127,4 +129,3 @@
     </body>             
 
 </html>
-
