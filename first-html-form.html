@@ -26,18 +26,16 @@
                 <tr>
                     <td>
                         <label for="age">Age :</label><br>
-                        <input type="text" id="age" name="age" size="5">
+                        <input type="number" id="age" name="age" min="0" max="150">
                     </td>    
                     <td>
                         <label for="gender">Genre :</label><br>
-                        <input type="radio" id="homme" name="gender" value="Homme">
-                        <label for="homme">Homme</label>
-                        <input type="radio" id="femme" name="gender" value="Femme">
-                        <label for="femme">Femme</label>
-                        <input type="radio" id='nb' name="gender" value="non-binare">
-                        <label for="nb">Non-Binaire</label>
-                        <input type="radio" id="no-want" name="gender" value="ne-ne-prononce-pas">
-                        <label for="no-want">Ne souhaite pas dire</label>
+                        <select id="gender" name="gender">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                            <option value="non-binaire">Non-Binaire</option>
+                            <option value="ne-souhaite-pas-dire">Ne souhaite pas dire</option>
+                        </select>
                     </td>
                 </tr>
             </table>
