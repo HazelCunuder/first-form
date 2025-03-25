@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
     <head>
-        <meta charset="UTF-8" />
-        <title>My First Form</title>
-        <html lang="fr">
+        <meta charset="UTF-8">
+        <title>Formulaire d'inscription</title>
     </head>
     
     <body>
@@ -40,7 +39,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="email">Email :</label><br>
+                        <label for=" mail">Email :</label><br>
                         <input type="email" id="mail" name="mail" size="65">
                     </td>
                 </tr>
@@ -53,11 +52,11 @@
                 <tr>
                     <td>
                         <label for="cp">Code Postal :</label>
-                        <input type="text" id="cp" name="code-postal" size="7">
+                        <input type="text" id="cp" name="code-postal" size="7" maxlength="5">
                     </td>
                     <td>
                         <label for="town">Ville :</label>
-                        <input type="txet" id="town" name="town" size="37">
+                        <input type="text" id="town" name="town" size="37">
                     </td>
                 </tr>
                 <tr>
@@ -83,7 +82,7 @@
                 <tr>
                     <td>
                         <label for="ssn">Numéro de Sécurité Sociale :</label><br>
-                        <input type="text" id="ssn" name="ssn" size="30">
+                        <input type="text" id="ssn" name="ssn" size="30" maxlength="15">
                     </td>
                     <td>
                         <label for="pnb">Numéro de Passeport :</label><br>
@@ -101,7 +100,7 @@
                     </td>
                 </tr>
             </table> <br>
-            <input type="submit" value='Submit' action="form-submitted.html" target="_self">
+            <input type="submit" value='Submit' formaction="form-submitted.html" formtarget="_self">
         </form>
     </body>             
 
